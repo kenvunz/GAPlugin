@@ -12,8 +12,10 @@
 	
 	<license>MIT</license>
     
-    <asset src="www/GAPlugin.js" target="GAPlugin.js" />
-    
+    <js-module src="www/GAPlugin.js" name="GAPlugin">
+        <clobbers target="GAPlugin" />
+    </js-module>
+
 	<engines>
       <engine name="cordova" version=">=3.0.0" />
     </engines>	
